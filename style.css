@@ -26,7 +26,7 @@ a {
   background-color: rgba(218, 195, 163, 0.5);
   color: #081146;
   border-radius: 20px;
-  display: flex;
+  display:flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
@@ -35,6 +35,13 @@ a {
   height: 20rem;
   padding: 10px;
   box-shadow: 3px 5px 10px #081146;
+}
+
+.glass-content {
+  background: rgba(255,255,255,0.5);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255,255,255,0.25);
 }
 
 .main-section {
@@ -76,6 +83,6 @@ h4 {
 
   .main-content {
     width: calc(100% - 300px);
-    margin: 30px 150px 30px 150px;
+    margin: 30px;
   }
 }
