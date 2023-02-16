@@ -2,10 +2,16 @@ import styles from "@/styles/Skills.module.scss";
 import { FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <div className={styles.skills}>
+    <motion.div
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }} 
+      className={styles.skills}>
       <h3>Skills</h3>
       <div className={styles.icons}>
         <FaHtml5 />
@@ -19,7 +25,7 @@ const Skills = () => {
         My knowledge in these fields is growing day by day, trying to learn the
         best practices and to build responsive and interactive web apps.{" "}
       </h4>
-    </div>
+    </motion.div>
   );
 };
 

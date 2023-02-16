@@ -7,12 +7,12 @@ import styles from "@/styles/Main.module.scss";
 
 const MainLayout = ({ children }) => {
   return (
-    <AnimatePresence>
+    <AnimatePresence mode='wait'>
       <motion.div
-        initial={{ opacity: 0, y: 15 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: 15 }}
-        transition={{ delay: 0.4 }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
         className={styles.App}
       >
         <Homelink />
