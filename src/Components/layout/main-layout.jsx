@@ -18,7 +18,6 @@ const MainLayout = ({ children }) => {
         <Homelink />
         <Header />
         <main>
-          {/* the children prop allows to render all the Pages components */}
           {children}
         </main>
         <Footer />

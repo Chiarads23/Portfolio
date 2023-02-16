@@ -1,18 +1,17 @@
 import Link from "next/link";
-import { motion } from "framer-motion";
-import { usePathname } from "next/navigation";
 import styles from "@/styles/Header.module.scss";
-
+import { motion } from "framer-motion";
 const Header = () => {
-  const path = usePathname();
-
-  return (
+  return (<motion.div  animate={{ opacity: 1 }}
+    initial={{ opacity: 0 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}>
     <header className={styles.header}>
       <h1 className={styles.title}>Chiara De Santis</h1>
       <p>Junior Front end Dev</p>
       <nav className={styles.navbar}>
         <Link href="/Skills" className={styles.navLink1}>
-          Skills and education
+        Skills and education
         </Link>
         <Link href="/AboutMe" className={styles.navLink2}>
           About me
@@ -21,7 +20,7 @@ const Header = () => {
           Besides coding
         </Link>
       </nav>
-    </header>
+    </header></motion.div>
   );
 };
 

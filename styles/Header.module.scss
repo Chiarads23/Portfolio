@@ -28,9 +28,14 @@
     font-family: $links-font;
     font-size: 20px;
     cursor: pointer;
+    transition: $transition;
     &:hover {
+      color:rgb(145, 171, 191);
+    }
+    &:active{
       color: $turquoise;
     }
+
   }
 }
 
@@ -52,6 +57,15 @@
       font-weight: 200;
       font-size: 60px;
       margin: 0;
+      background: linear-gradient(to right, $blue 50%, $glow-sand 50%, $glow-turquoise );
+      background-size: 200%;
+      background-clip: text;
+      -webkit-text-fill-color:$shadow-sand;
+      transition: $transition;
+
+      &:hover{
+        background-position: -100%;
+      }
     }
 
     p {

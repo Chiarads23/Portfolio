@@ -1,17 +1,19 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap');
 
 $black: rgb(12, 20, 23);
 $dark-blue: rgb(18, 29, 39);
 $blue: rgb(20, 42, 53);
-$turquoise: rgb(52, 100, 120);
+$turquoise: rgb(52, 101, 121);
 $brown: rgb(108, 59, 26);
 $sand: rgb(156, 104, 64);
 $light-sand: rgb(242, 232, 224);
 $text-white: rgb(240, 240, 240);
-
+$glow-sand: rgb(235, 146, 79);
+$glow-turquoise: rgb(52, 139, 173);
+$glow-blue: rgb(6, 64, 93);
 
 $title-font: 'Josefin Sans', sans-serif;
 $links-font:"Nova Round", cursive;
@@ -24,3 +26,5 @@ $shadow-turquoise: rgba(52, 100, 120, 0.4);
 $shadow-brown: rgba(108, 59, 26, 0.4);
 $shadow-sand: rgba(156, 104, 64, 0.4);
 $shadow-light-sand: rgba(242, 232, 224, 0.4);
+
+$transition: 0.5s ease-out;

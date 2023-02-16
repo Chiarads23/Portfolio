@@ -14,9 +14,12 @@
     svg {
       width: 32px;
       height: 32px;
-
+      transition: 0.5s ease-out;
       &:hover {
         color: $light-sand;
+      }
+      &:active{
+        color: $sand;
       }
     }
   }

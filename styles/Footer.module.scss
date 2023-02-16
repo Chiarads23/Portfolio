@@ -19,6 +19,15 @@
       font-size: 60px;
       margin: 0;
       padding-left: 8px;
+      background: linear-gradient(to right, $blue 50%, $glow-sand 50%, $glow-turquoise );
+      background-size: 200%;
+      background-clip: text;
+      -webkit-text-fill-color:$shadow-sand;
+      transition: $transition;
+
+      &:hover{
+        background-position: -100%;
+      }
     }
 
     .descr {
@@ -42,13 +51,19 @@
       color: $light-sand;
       font-family: $links-font;
       cursor: pointer;
+      transition: $transition;
       &:hover {
+        color: $glow-sand;
+        
+      }
+      &:active{
         color: $sand;
       }
 
       svg {
         width: 24px;
         height: 24px;
+      
       }
     }
   }
