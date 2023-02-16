@@ -1,0 +1,15 @@
+@import "./styles/mixins";
+@import "./styles/variables";
+
+body {
+  background: linear-gradient(0deg, $black 0%, $turquoise 100%);
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../public/images/dark-ornate-mandala.jpg);
+    @include background();
+    margin: 0;
+  }
+}

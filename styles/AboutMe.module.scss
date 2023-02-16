@@ -1,0 +1,18 @@
+@import "./mixins";
+@import "./variables";
+
+.AboutMe {
+  @include pagesLayout();
+
+  h3 {
+    color: $sand;
+    text-decoration: underline;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .AboutMe {
+    height: calc(84% - 100px);
+    width: 48%;
+  }
+}

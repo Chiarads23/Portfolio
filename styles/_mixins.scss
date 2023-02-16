@@ -1,0 +1,49 @@
+@import './variables';
+
+@mixin background (
+   
+    $repeat: no-repeat,
+    $size: cover,
+    $position: fixed,
+    $filter: blur(2px)
+) {
+
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+    backdrop-filter: $filter;
+}
+
+@mixin pagesLayout (
+    $position: fixed,
+    $left:8px,
+    $top: 112px,
+    $height: calc(100% - 360px),
+    $width: calc(100% - 12%),
+    $background-color: rgba(217, 217, 217, 0.6),
+    $color: $blue,
+    $border: 1px solid $shadow-sand,
+    $box-shadow: inset 1px 3px 10px rgb(57, 82, 96) 3px 5px 10px rgb(57, 82, 96),
+    $border-radius: 8px,
+    $font: $aside-font,
+    $display: flex,
+    $column: column,
+    $justify: space-around,
+    $padding: 8px 16px
+) {
+    position: $position;
+    left: $left;
+    top: $top;
+    height: $height;
+    width: $width;
+    background-color: $background-color;
+    color: $color;
+    border: $border;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    font-family: $font;
+    justify-content: $justify;
+    padding: $padding;
+    display: $display;
+    flex-direction: column;
+}

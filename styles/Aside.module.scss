@@ -1,0 +1,55 @@
+@import "./mixins";
+@import "./variables";
+
+.aside {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  height: 320px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $light-sand;
+  border: 1px solid $shadow-sand;
+  background: linear-gradient(-90deg, $shadow-blue, $shadow-turquoise);
+  box-shadow: 1px 3px 10px rgb(57, 82, 96);
+  border-radius: 8px;
+  font-family: $aside-font;
+
+  p,
+  cite {
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+
+  .aside {
+    position: fixed;
+    right: 0%;
+    top: 0%;
+    left: auto;
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: calc(100% - 88px);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+      90deg,
+      rgba(11, 24, 32, 1),
+      rgba(36, 94, 115, 1)
+    );
+    
+    p,
+    cite {
+      text-align: right;
+    }
+  }
+}
