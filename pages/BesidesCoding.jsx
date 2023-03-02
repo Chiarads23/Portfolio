@@ -10,8 +10,9 @@ const BesidesCoding = () => {
     exit={{ opacity: 0 }}
     transition={{ duration: 0.5 }} 
     className={styles.besides}>
-      <h3>Besides coding</h3>
+      <h3>Besides coding</h3><h5>..my voice</h5>
       <div className="ratio ratio-4x3">
+        
         <iframe
           src="https://www.youtube.com/embed/gGfijDTU3is"
           title="YouTube video"

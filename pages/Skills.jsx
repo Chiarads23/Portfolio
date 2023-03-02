@@ -1,6 +1,6 @@
 import styles from "@/styles/Skills.module.scss";
 import { FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import { SiJavascript, SiVisualstudiocode } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { motion } from "framer-motion";
 
@@ -14,6 +14,7 @@ const Skills = () => {
       className={styles.skills}>
       <h3>Skills</h3>
       <div className={styles.icons}>
+        <SiVisualstudiocode />
         <FaHtml5 />
         <FaCss3Alt />
         <SiJavascript />
