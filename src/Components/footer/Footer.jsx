@@ -21,7 +21,7 @@ const Footer = () => {
         <a
           href={"/images/ChiaraDeSantisCV.jpg"}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
         >
           Resume
         </a>
